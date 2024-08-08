@@ -1,5 +1,5 @@
 //find TreeTraversal preorder,inorder,postorder for given tree    
- //      4
+ //          4
     //      /\
     //     2  5
     //    /   /\
@@ -17,7 +17,7 @@ class TreeNode{
         left=right=null;
     }
 }
-public class Traversal{
+public class TreeTraversal{
     
     public static void preorder(TreeNode node){
         if(node==null)
@@ -47,12 +47,11 @@ public class Traversal{
         root.left.left=new TreeNode(3);
         root.left.left.right=new TreeNode(9);
         root.left.left.right.left=new TreeNode(1);
-        // root.left.right.left=new TreeNode(8);
         root.right.left=new TreeNode(7);
         root.right.right=new TreeNode(6);
         root.right.right.left=new TreeNode(8);
         
-        Traversal tree=new Traversal();
+        TreeTraversal tree=new TreeTraversal();
         System.out.print("Preorder traversal:");
         tree.preorder(root);
         System.out.print("inorder traversal:");
